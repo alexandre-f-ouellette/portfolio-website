@@ -8,6 +8,15 @@
   padding: 5px 0 0 20px;
 }
 
+.navbar-brand > img {
+  display: inline;
+}
+
+.navbar-brand-text {
+  color: DarkGrey;
+  padding-left: 0.5em;
+}
+
 .nav li a {
   padding-left: 2em;
 }
