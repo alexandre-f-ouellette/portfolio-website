@@ -1,0 +1,245 @@
+/**** Navigation ****/
+.navbar {
+  background-color: #39373a;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding: 5px 0 0 20px;
+}
+
+.nav li a {
+  padding-left: 2em;
+}
+
+.navbar-header button span {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #39373a;
+}
+
+/* Typography */
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1em;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #BE98FF;
+}
+
+
+/**** CONTENT ****/
+
+body {
+  padding-top: 50px;
+}
+
+#home {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  background-color: #F7FFFF;
+}
+
+.hero-image {
+  padding: 50px;
+  background-image: url("../img/hero-image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.circle-image-container {
+  text-align: center;
+}
+
+.circle-image {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: url(../img/my-8bit-face-80.png) no-repeat;
+}
+
+.not-full-width {
+  width: 80%;
+}
+
+#projects img {
+  margin: 0 auto;
+}
+
+.project-img {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  position: relative;
+}
+
+.info {
+  text-transform:uppercase;
+  font-weight:500;
+  letter-spacing:0.2em;
+  display: none;
+}
+.proj-title {
+  font-weight:100;
+}
+
+.panel-default > .panel-heading {
+  background-color: #FCF9FF;
+}
+
+.faq-glyphicon {
+  padding-right: .3em;
+}
+
+.h2-learn-more {
+  float: left;
+  padding-left: .45em;
+  padding-top: .5em;
+}
+
+#modal-button {
+  float: right;
+  padding-top: 30px;
+  padding-right: 15px;
+}
+
+.modal-title {
+  display: inline;
+}
+
+#resume-embed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about h3 {
+  text-align: center;
+}
+
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.youtube-video {
+  padding-bottom: .5em;
+  width: 60%;
+  transform: translate(33%);
+}
+
+#contact {
+  width: 100%;
+  background-image: url("../img/water.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#gmap {
+  width: 500px;
+  height: 300px;
+}
+
+.contact-form {
+  color: white;
+  letter-spacing: .05em;
+  padding-left: 8%;
+}
+
+.form-group {
+  margin-bottom: .5em;
+}
+
+.form-group p {
+  display: inline;
+  padding-left: .1em;
+}
+
+.contact-form {
+  padding-bottom: 15px;
+}
+
+
+/**** FOOTER ****/
+footer {
+  width: 100%;
+  background-color: #39373a;
+  color: white;
+  float: left;
+  padding: .8em 0 .5em .3em;
+}
+
+footer p {
+  display: inline;
+  -webkit-margin-before: 0;
+  vertical-align: top;
+  padding-right: .2em;
+}
+
+footer .fb-like {
+  padding-left: .2em;
+  padding-top: 0;
+  vertical-align: top;
+}
+
+
+/**** TYPOGRAPHY ****/
+.container {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.hero-image h2 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.faq-glyphicon:hover {
+  color: black;
+}
+
+#contact {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#gmap {
+  color: black;
+  text-shadow: none;
+}
+
+.asterisk-red {
+  color: red;
+}
