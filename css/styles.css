@@ -55,10 +55,6 @@ body {
   background-size: cover;
 }
 
-.circle-image-container {
-  text-align: center;
-}
-
 .circle-image {
   display: inline-block;
   width: 15em;
@@ -122,14 +118,6 @@ body {
   height: 500px;
   width: 100%;
   padding: 10px;
-}
-
-#about h2 {
-  text-align: center;
-}
-
-#about h3 {
-  text-align: center;
 }
 
 .picture {
@@ -236,4 +224,17 @@ h1 {
 
 .asterisk-red {
   color: red;
+}
+
+/**** Globals ****/
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
