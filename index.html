@@ -70,7 +70,7 @@
     </div>
 
     <!-- ABOUT ME -->
-    <div class="container anchor not-full-width" id="about">
+    <div class="container anchor not-full-width padding-top-bottom" id="about">
       <div class="row">
         <div class="col-md-6">
           <h2 class="text-center">About Me</h2>
@@ -84,7 +84,26 @@
             <li>Multiple Operating Systems (Windows, Mac, Linux)</li>
           </ul>
           <p>Besides working on applications, you can find me in a corner with headphones on, either reading one of the many books on my to-read list, watching someone on Twitch or binging on the latest Netflix series. I might also be out with my dogs and/or amazing partner.</p>
-          <p></p>
+
+          <div id="modal-button">
+            <!-- Small modal button -->
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">View Resumé/CV</button>
+          </div>
+
+          <!-- SMALL MODAL -->
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Resumé</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <embed id="resume-embed" src="includes/alexandre_ouellette_resume.pdf">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5 skills">
@@ -128,7 +147,7 @@
     <!-- END OF ABOUT ME -->
 
     <!-- PROJECTS -->
-    <div class="container anchor not-full-width" id="projects">
+    <div class="container anchor not-full-width padding-top-bottom" id="projects">
       <div class="row text-center">
         <h2>Projects</h2>
       </div>
@@ -170,76 +189,56 @@
     </div> <!-- end container -->
     <!-- END OF PROJECTS -->
 
-
-   <!-- LEARN MORE -->
-    <div class="container anchor not-full-width" id="faq">
+    <!-- CONTACT -->
+    <div class="container anchor not-full-width text-center padding-top-bottom" id="contact">
       <div class="row">
-        <h2 class="h2-learn-more h2-padding">FAQs</h2>
-        <div id="modal-button">
-          <!-- Small modal button -->
-          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">View Resumé/CV</button>
-        </div>
-
-        <!-- SMALL MODAL -->
-        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Resumé</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body">
-                <embed id="resume-embed" src="includes/alexandre_ouellette_resume.pdf">
-              </div>
+        <h2>Contact Information</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 contact-info">
+          <div class="row">
+            <h3>Professional</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6 contact-item">
+              <a href="https://www.linkedin.com/in/alexandre-ouellette-271a2a75/" target="_blank">
+                <img src="img/icons/linkedin.png">
+                <p>LinkedIn Profile</p>
+              </a>
+            </div>
+            <div class="col-md-6 contact-item">
+              <a href="https://github.com/alexandre-f-ouellette" target="_blank">
+                <img src="img/icons/github.png">
+                <p>GitHub</p>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </div> <!-- end container -->
-    <!-- END OF LEARN MORE -->
-
-    <!-- CONTACT -->
-    <div class="container anchor" id="contact">
-      <div class="row">
-        <div class="contact-form col-lg-6 col-md-6">
-          <h3>Say hi!</h3>
-          <form>
-            <div class="form-group">
-              <div class="row">
-                <div class="form-group col-lg-6 col-md-6">
-                  <label class="contact-form-labels" for="input-name">Name</label>
-                  <input type="text" id="input-name" class="form-control" placeholder="Enter your name here." title="Enter your name here.">
-                </div>
-                <div class="form-group col-lg-6 col-md-6">
-                  <label class="contact-form-labels" for="input-name">Phone Number</label>
-                  <input type="tel" id="input-tel" class="form-control" placeholder="Enter your number here." title="Enter your phone number here.">
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-lg-12 col-md-12">
-                  <label class="contact-form-labels" for="input-email">Email<p class="asterisk-red">*</p></label>
-                  <input type="email" id="input-email" class="form-control" required="required" placeholder="Enter your email here." title="Enter your email here.">
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-lg-12 col-md-12">
-                  <label class="contact-form-labels" for="input-message">Message<p class="asterisk-red">*</p></label>
-                  <textarea class="form-control message-box" id="input-message" required="required" placeholder="Your message here." title="Your message here." style="resize:none" cols="40" rows="5"></textarea>
-                  <p id="char-count"></p>
-                  <p id="visible-comment"></p>
-                </div>
-              </div>
+        <div class="col-md-4 contact-info">
+          <div class="row">
+            <h3>Social</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="https://twitter.com/alexfouellette" class="twitter-follow-button" data-show-count="false">Follow @alexfouellette</a>
             </div>
-            <button type="submit" class="btn btn-primary" id="contact-form-button">Submit Message</button>
-          </form>
+            <div class="col-md-6">
+              <div class="fb-like" data-href="https://www.facebook.com/Alexandre-Ouellette-399876613554791/" data-width="30" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <h3>Contact</h3>
-          <p>
-            I am in Ottawa, Canada. </br>
-            Contact me by phone at 613-404-6939!
-          </p>
-          <div id="gmap"></div>
+        <div class="col-md-4 contact-info">
+          <div class="row">
+            <h3>Other</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <a href="mailto:alexandre.f.ouellette@gmail.com">
+                <img src="img/icons/mail.png">
+                <p>alexandre.f.ouellette@gmail.com</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!-- end container -->
@@ -247,8 +246,6 @@
 
     <footer>
       <p>&copy; Alexandre Ouellette</p>
-      <a href="https://twitter.com/alexfouellette" class="twitter-follow-button" data-show-count="false">Follow @alexfouellette</a>
-      <div class="fb-like" data-href="https://www.facebook.com/Alexandre-Ouellette-399876613554791/" data-width="30" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
     </footer>
 
     <!-- ============================= -->
@@ -261,7 +258,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClfqTzowx2RWhRLUi3arWZNdrEqCkcRKs&callback=initMap"
-    async defer></script>
   </body>
 </html>
