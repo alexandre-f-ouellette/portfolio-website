@@ -29,7 +29,7 @@
   background-color: #39373a;
 }
 
-/* Typography */
+/* Navbar Typography */
 
 .navbar-default .navbar-nav > li > a {
   font-size: 1em;
@@ -78,14 +78,15 @@ body {
   width: 80%;
 }
 
-#projects img {
-  margin: 0 auto;
+#projects a {
+  color: inherit;
 }
 
 .project-img {
   display: block;
   margin: auto;
-  max-width: 200px;
+  width: 300px;
+  height: 220px;
   position: relative;
 }
 

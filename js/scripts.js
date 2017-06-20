@@ -108,31 +108,6 @@ $(document).ready(function() {
     return false;
   });
 
-  // work section
-  for(var i=0; i < works.length; ++i){
-    $('.carousel-indicators').append('\
-      <li data-target="#carousel-example-generic" data-slide-to="' + i + '" ' + (i === 0 ? 'class="active"' : "") + '></li>\
-    ');
-
-    $('.carousel-inner').append('\
-      <div class="item' + (i === 0 ? " active" : "") + '">\
-        <a href="' + works[i].url + '" class="work-img">\
-          <img src="' + works[i].pic + '" alt="' + works[i].title + '">\
-          <div class="carousel-caption">\
-            <h3 class="info">' + works[i].title + '</h3>\
-          </div>\
-        </a>\
-      </div>');
-
-    var images = $('#projects img');
-
-    if (i%2 === 0) {
-      $(images[i]).css("border", "2px solid DodgerBlue");
-    } else {
-      $(images[i]).css("border", "2px solid salmon");
-    };
-  };
-
   $(".item")
     .mouseenter( function() {
       $(".info", this).show();
